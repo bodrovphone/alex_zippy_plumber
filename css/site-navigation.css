@@ -1,0 +1,1206 @@
+
+
+/*@font-face {
+    font-family: 'acumin-pro';
+    src: url('../fonts/acuminpro/acuminpro.eot');
+    src: url('../fonts/acuminpro/acuminpro.eot') format('embedded-opentype'),
+         url('../fonts/acuminpro/acuminpro.woff2') format('woff2'),
+         url('../fonts/acuminpro/acuminpro.woff') format('woff'),
+         url('../fonts/acuminpro/acuminpro.ttf') format('truetype'),
+         url('../fonts/acuminpro/acuminpro.svg#acuminpro') format('svg');
+}
+
+@font-face {
+    font-family: 'din-condensed-web';
+    src: url('../fonts/dincond/dincond.eot');
+    src: url('../fonts/dincond/dincond.eot') format('embedded-opentype'),
+         url('../fonts/dincond/dincond.woff2') format('woff2'),
+         url('../fonts/dincond/dincond.woff') format('woff'),
+         url('../fonts/dincond/dincond.ttf') format('truetype'),
+         url('../fonts/dincond/dincond.svg#dincond') format('svg');
+}
+
+Uncomment this section if you want the fonts via CSS
+Note: JS fonts are more crisp, where as CSS fonts have quick loading time;
+If you are using this code, remove 'webfonts.js' from the html.
+
+*/
+
+
+/* * ~~~~~~~~~~~ Page MAIN Blocks CSS ~~~~~~~~~~~~ * */
+
+
+
+html {
+    font-size: 12px !important;
+}
+
+body {
+	font-family:acumin-pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #666;
+    background-color: #fff;
+}
+
+
+
+header, footer, #hero_img, 
+main, #sidebar {
+	float: left;
+	width: 100%;
+}
+
+
+header {
+	background-color: #07346b;
+    font-size: 1rem;
+    height: auto;
+    left: 0;
+    line-height: 1.5;
+    min-width: 48rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+body .rr_row {
+	margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    width: 100%;	
+    height: 6rem;
+    display: block;
+    float: none;
+    margin: auto;
+    -webkit-transition: height .25s;
+    -icab-transition: height .25s;
+    transition: height .25s;
+}
+
+body header, body header * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*************/
+
+
+
+/* * ~~~~~~~~ Top thin blue menu (Career, Contact us...) CSS - Desktop view  ~~~~~~~~ * */
+
+body header .rr_row .menu_con .top_sec {
+	width: 100%;
+	background: #003c84;
+    background: -webkit-gradient(linear,left bottom,right bottom,color-stop(0,#07346b),color-stop(.5,#003c84));
+    background: -webkit-linear-gradient(right,#07346b,#003c84 50%);
+    background: -webkit-gradient(linear,left top,right top,from(#07346b),color-stop(50%,#003c84));
+    background: -webkit-linear-gradient(left,#07346b,#003c84 50%);
+    background: linear-gradient(90deg,#07346b 0,#003c84 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#07346b",endColorstr="#003c84",GradientType=1);
+    height: 2rem;
+    margin-left: 0;
+    text-align: right;
+    position: relative;
+    top: 0;
+    -webkit-transition: top .25s;
+    -icab-transition: top .25s;
+    transition: top .25s;
+}
+
+header:after {
+	background: #003c84 none repeat scroll 0 0;
+    content: "";
+    height: 2rem;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    -webkit-transition: top .25s;
+    -icab-transition: top .25s;
+    transition: top .25s;
+    width: 50%;
+    z-index: -1;
+}
+
+body header .rr_row .menu_con .top_sec a {
+    color: #d5d7e5;
+    font-size: .75rem;
+    line-height: 1.5;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    position: relative;
+}
+
+body header .rr_row .menu_con .top_sec a:after {
+	color: #8188b1;
+    content: "|";
+    left: auto;
+    position: absolute;
+    right: -.25rem;
+    top: 0;
+}
+
+body header .rr_row .menu_con .top_sec a:last-child:after {
+	display: none;
+}
+
+/*************/
+
+
+
+/* * ~~~~~~~~ Logo CSS - Desktop view  ~~~~~~~~ * */
+
+body header .rr_row .rr_logo {
+    height: 3rem;
+    left: .75rem;
+    position: absolute;
+    top: 0;
+    width: 17rem;
+    z-index: 1;
+    -webkit-transition: height .25s,width .25s;
+    -icab-transition: height .25s,width .25s;
+    transition: height .25s,width .25s;
+}
+
+body header .rr_row .rr_logo .svg {
+    bottom: 0;
+    display: block;
+    height: 2.7rem;
+    left: 0;
+    margin: auto;
+    max-width: 26rem;
+    position: absolute;
+    top: -8px;
+    width: auto;
+}
+
+
+
+/* * ~~~~~~~~ Main Menu CSS- Desktop View ~~~~~~~~ * */
+
+body header .rr_row .menu_con {
+	height: 6rem;
+    padding-left: 0;
+    text-align: right;
+    -webkit-transition: height .25s;
+    -icab-transition: height .25s;
+    transition: height .25s;
+    width: 100%;
+}
+
+body header .rr_row .menu_con .main_menu {
+	position: relative;
+    width: 100%;
+    z-index: 200;
+    top: 0;
+    -webkit-transition: top .25s;
+    transition: top .25s;
+    display: block;
+}
+
+body header .rr_row .menu_con .main_menu > ul {
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    -js-display: flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -khtml-flex-wrap: nowrap;
+    -icab-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    -o-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -khtml-justify-content: space-between;
+    -icab-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    text-align: right;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li {
+	display: inline-block;
+    font-size: 1.125rem;
+    height: 4rem;
+    line-height: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    -webkit-transition: height .25s;
+    -icab-transition: height .25s;
+    transition: height .25s;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li > a {
+	border-bottom: .375rem solid #07346b;
+    color: #d8deef;
+    display: table;
+    /*font-family: din-condensed-web,DIN Condensed Web,Gnuolane,Impact,sans-serif;*/
+    font-size: 0.9rem;
+    height: 100%;
+    line-height: 1;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .375rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li > a > span {
+	display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    position: relative;
+}
+
+/*************/
+
+
+
+/* * ~~~~~~~~ Main Menu Dropdown's CSS- Desktop View ~~~~~~~~ * */
+
+body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab {
+	margin-left: -15rem;
+	width: 38rem;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down.commercial-tab {
+	margin-left: -15rem;
+    width: 38rem;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down.how-to-tab {
+    margin-left: -16.4rem;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul.service-singles {
+    width: 15rem!important;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul.service-singles > li {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul.service-singles > li > a {
+	color: #2d397d;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.33333;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down {
+	color: #3c5aaf;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 0.75rem rgba(0,0,0,.5);
+    box-shadow: 0 0 0.75rem rgba(0,0,0,.5);
+    display: none;
+    left: 50%;
+    margin-left: -18rem;
+    padding: 1.5rem 2rem 2rem;
+    position: absolute;
+    text-align: left;
+    top: 4rem;
+    width: 19rem;
+    z-index: 450;
+    overflow: auto;
+    height: auto;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down .emergency-phone {
+	color: #3c5aaf;
+    background-color: #ebeef7;
+    border-radius: .5rem;
+    display: block;
+    font-size: 1rem;
+    height: 2.5rem;
+    line-height: 1.6;
+    padding-top: .375rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down .emergency-phone strong {
+	color: #2d397d;
+    font-size: 1.125rem;
+    line-height: 1.33333;
+    text-transform: uppercase;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul {
+	display: block;
+    float: left;
+    margin: 1rem 0 0;
+    padding-left: 0;
+    vertical-align: top;
+    width: 13rem;
+    padding-right: 1rem;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul > li {
+	color: #3c5aaf;
+    display: block;
+    font-size: .9rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul > li:first-child > a {
+	color: #2d397d;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.33333;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li.drop-down-tab > a > span:after {
+	content: "\f078";
+    font-size: 1rem;
+    height: 1.8rem;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    position: absolute;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: 0;
+    width: 1rem;
+    word-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: 10px;
+}
+
+
+
+/* *~~~~~~~~~ Dropdown menu hover CSS - Desktop View ~~~~~~~~* */
+
+body header .rr_row .menu_con .main_menu > ul > li.drop-down-tab.active > a > span:after {
+	display: none;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li.drop-down-tab.active > a {
+	background: #fff;
+    border-bottom: .375rem solid #fff;
+    color: #2d397d;
+    z-index: 500;
+}
+
+body header .rr_row .menu_con .main_menu > ul > li.drop-down-tab.active .nav-drop-down {
+	display: block;
+}
+
+
+
+/* *~~~~~~~~~ Sub Header CSS (header strip with map marker and phone number) - Desktop View ~~~~~~~~* */
+
+body .sub-header-custom.splash {
+    top: 6rem;
+    -webkit-transition: top .25s 0ms;
+    transition: top .25s 0ms;
+}
+
+body .sub-header-custom {
+    font-size: 1rem;
+    height: 5rem;
+    top: 6rem;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    line-height: 1.5;
+    min-width: 48rem;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+body .sub-header-custom:after {
+    background: transparent;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(0,0,0,.2)),color-stop(1,transparent));
+    background: -webkit-linear-gradient(top,rgba(0,0,0,.2),transparent);
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.2)),to(transparent));
+    background: linear-gradient(180deg,rgba(0,0,0,.2) 0,transparent);
+    content: none;
+    height: .5rem;
+    top: auto;
+    bottom: 0;
+}
+
+body .sub-header-custom:after, 
+body .sub-header-custom:before {
+	background-color: #b1bddf;
+    content: "";
+    height: 4rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+}    
+
+body .sub-header-custom .rr_row #map-marker {
+    color: #d52d37;
+    float: left;
+    line-height: 4rem;
+    font-size: 1.7rem;
+    padding-left: .6rem;
+    width: 2.3rem;
+    text-align: center;
+}
+
+body .sub-header-custom .rr_row #header-location {
+	line-height: 4rem;
+    display: inline-block;
+    float: left;
+    position: relative;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+body .sub-header-custom .rr_row .desktop-header-phone {
+	color: #d52d37;
+    float: right;
+    font-size: 1.375rem;
+    height: 3rem;
+    line-height: 1.75;
+    margin-top: .75rem;
+    padding-right: .75rem;
+    position: relative;
+}
+
+body .sub-header-custom .rr_row .desktop-header-phone > strong {
+	font-size: 1.5rem;
+}
+
+body .sub-header-custom .rr_row {
+    height: 4rem;
+}
+
+
+
+/* * ~~~~~~~ DESKTOP MENU after scroll adjustments ~~~~~~~ * */
+
+body header.header-custom.sticky {
+	background-color: #07346A;
+	transition: 0.3s ease all;
+}
+
+body header.header-custom.sticky .rr_row .menu_con .main_menu > ul > li > a {
+	border-bottom-color: #07346A;
+	color: #fff;
+}
+
+body header.header-custom.sticky .rr_row .menu_con .main_menu > ul > li.active > a {
+	border-bottom-color: #fff;
+}
+
+body .sub-header-custom.sticky {
+    top: 3rem;
+    -webkit-transition: top .25s 0ms;
+    transition: top .25s 0ms;
+}
+
+body .header-custom.sticky .rr_row {
+	height: 3rem;
+}
+
+body .header-custom.sticky .rr_row .menu_con {
+   	padding-left: 23%;
+   	height: 3rem;
+}
+
+body .header-custom.sticky .rr_row .menu_con .main_menu > ul > li > a {
+    font-size: 1rem;
+    padding-left: .125rem;
+    padding-right: .125rem;
+}
+
+body .header-custom.sticky .rr_row .rr_logo {
+    left: .75rem;
+    top: 0;
+    overflow: hidden;
+    width: 11rem;
+}
+
+body .header-custom.sticky .rr_row .rr_logo .svg {
+	width: 100%;
+	height: auto;
+	top: -3px; 
+}
+
+body .header-custom.sticky .rr_row .menu_con .main_menu > ul > li {
+    height: 3rem;
+    min-width: 55px;
+}
+
+body header.header-custom.sticky .rr_row .menu_con .main_menu, 
+body header.header-custom.sticky .rr_row .menu_con .top_sec,
+body header.header-custom.sticky:after {
+	top: -2rem;
+}
+
+body .header-custom.sticky .rr_row .main_menu > ul > li > a > span br {
+	display: none;
+}
+
+body .header-custom.sticky .rr_row .menu_con .main_menu > ul > li .nav-drop-down {
+    top: 3rem;
+}
+
+span#call-now {
+    /*background-color: #d52d37;*/
+	background-color: #07346A;
+    border-radius: 4px;
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    margin-left: 6px;
+    padding: 8px 9px;
+}
+
+span#call-now .phone-icon {
+	bottom: -3px;
+    font-size: 26px;
+    height: 15px;
+    line-height: 15px;
+    width: 26px;
+    position: relative;
+    left: -1px;
+}
+
+span#call-now span.local-page-phone {
+	color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+
+
+/* * ~~~~~~~~~ Media Queries for different resolutions of Desktop ~~~~~~~~~ * */
+
+@media only screen and (min-width: 768px) {
+	body .rr_row {
+	    max-width: 64rem;
+    	min-width: 48rem;
+    	padding-left: .75rem;
+    	padding-right: .75rem;
+	}
+	header.sub-header-custom.splash {
+	    display: block;
+	}
+	header.sub-header-custom.sticky, #mobile-header, #mobile-navigation {
+	    display: none !important;
+	}
+}
+
+@media (min-width: 1024px) {
+	body .header-custom.sticky .rr_row .menu_con {
+    	padding-left: 18%;
+	}
+}
+
+@media only screen and (min-width: 1128px) {
+	body .rr_row {
+	    max-width: 77rem;
+	    min-width: 70.5rem;
+	    padding-left: 1.5rem;
+	    padding-right: 1.5rem;
+	}
+	body header .rr_row .rr_logo {
+	    height: 6rem;
+	    left: 1.5rem;
+	    width: 26rem;
+	}
+	body header .rr_row .top_sec {
+	    margin-left: 0;
+	    width: auto;
+	    display: block;
+	}
+	body header .rr_row .menu_con {
+	    padding-left: 25.5rem;
+	}
+	body .header-custom.sticky .rr_row .menu_con .main_menu > ul > li > a {
+	    padding-left: .5rem;
+	    padding-right: .75rem;
+	}
+	body .header-custom.sticky .rr_row .menu_con .main_menu > ul {
+	    padding-left: 50px;
+	}
+	body .header-custom.sticky .rr_row .rr_logo {
+	    height: 3rem;
+	    left: 1.75rem;
+	    overflow: hidden;
+	    width: 15.5rem;
+	}
+	body header .rr_row .rr_logo .svg {
+		height: auto;
+		top: -9px;
+	}
+}
+
+@media (min-width: 1174px) {
+	body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab {
+		margin-left: -26rem;
+    	width: 52rem;
+	}
+	body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down.commercial-tab {
+		margin-left: -26rem;
+	    width: 52rem;
+	}
+}
+
+@media (max-width: 921px) {
+	body header.header-custom.sticky .rr_row .menu_con .main_menu > ul > li.drop-down-tab > a > span:after {
+		bottom: -9px;
+	}
+}
+
+@media (max-width: 1174px) and (min-width: 768px) {
+	body .header-custom .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul {
+    	width: 17rem;
+	}
+	body .header-custom .rr_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab > ul > li {
+	    display: none;
+	}
+	body .header-custom .rr_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab > ul > li:first-child {
+	    display: inline-block;
+	}
+}
+
+
+
+
+
+/* * ~~~~~~~~~~ Scroll Sections menu CSS ~~~~~~~~~~ * */
+
+aside {
+	float: left;
+    background-color: #FFCC00;
+    border-bottom:solid 1px rgb(220,220,220);
+    padding-top:10px;
+    margin-top:0px;
+    width: 100%;
+}
+
+aside ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+aside ul li {
+	display: inline-block;
+	float: none;
+}
+
+aside a {
+	color: #333;
+	transition: 0.1s ease all;
+	padding:3px 15px 10px 15px;
+	border-bottom: 3px solid #FFCC00;
+	display: block;  
+}
+
+aside.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    margin-top:48px;
+}
+
+aside a.nav-active {
+    border-bottom: 4px solid #2e449f;
+}
+
+aside a:hover, aside a:active, aside a:focus {
+	color: #2e449f;
+	text-decoration: none;
+} 
+
+
+h1 {
+	padding-top: 30px;
+}
+
+aside > ul > li:last-child {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	aside a {
+		padding: 11px 8px;
+	}
+	aside > ul > li {
+		float: left;
+	}
+	aside > ul > li:first-child {
+		margin-left:15px;
+	}
+	aside > ul.sticky > li:last-child {
+		float: right;
+		background-color: #d52d37;
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    width: 85px;
+	}
+	aside > ul.sticky > li:last-child > a {
+		padding: 0;
+	    color: #fff;
+	    font-size: 12px;
+	    padding-top: 10px;
+	    border: 0;
+	}
+	aside > ul.sticky > li:last-child i {
+		display: block;
+	    color: #fff;
+	    font-size: 28px;
+	    top: .1em;
+	    left: .5em;
+	}
+}
+
+@media (max-width: 450px) {
+	aside > ul > li:nth-child(4),
+	aside > ul > li:nth-child(5) {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+	    font-size: 16px!important;
+	}
+}
+
+
+
+
+/* * ~~~~~~~~~~ Few extra elements used in this demo ~~~~~~~~~ * */
+
+#hero_img {
+	height: 300px;
+	background: url('../images/plumbing-services2.png') no-repeat center center;
+	margin-top: 50px;
+}
+
+footer {
+	background: #999;
+	min-height: 260px;
+	margin-top: 50px;
+}	
+
+
+
+
+
+/*******************************************************************************************************
+********************************************************************************************************
+***************************************||||  MOBILE VIEW MENU CSS  ||||*********************************
+********************************************************************************************************
+********************************************************************************************************/
+
+@media (max-width: 767px) {
+	body .header-custom, body .sub-header-custom {
+		display: none !important;
+	}
+}
+
+#mobile-header {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    min-width: 320px;
+    z-index: 1000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#mobile-header .zippy-navigation-container#mobile-menu-header {
+    background-color: #003c84;
+    height: 4.5rem;
+    padding: .25rem .75rem;
+    z-index: 100;
+    transition: 0.3s ease all;
+}
+
+#mobile-header .zippy-navigation-container {
+    position: relative;
+}
+
+#mobile-header .zippy-navigation-container#mobile-menu-header #open-side-nav {
+    float: left;
+    height: 100%;
+    width: 44px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s ease all;
+}
+
+#mobile-header .zippy-navigation-container#mobile-menu-header #mobile-logo {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    max-width: 22.1666667rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 71.25%;
+    z-index: 1;
+    padding-top: 7px;
+    text-align: center;
+}
+
+#mobile-header .zippy-navigation-container#mobile-menu-header #site-search {
+    float: right;
+    height: 100%;
+    width: 44px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+#mobile-header .zippy-navigation-container#mobile-menu-sub-header {
+    background: transparent;
+    height: 5.25rem;
+    overflow: hidden;
+    padding: 0;
+}
+
+#mobile-header .zippy-navigation-container#mobile-menu-sub-header #breakout-nav {
+	background-color: #506bb7;
+    display: block;
+    overflow: hidden;
+    height: 5.25rem;
+    margin-top: 0;
+    -webkit-transition: margin-top .5s;
+    -icab-transition: margin-top .5s;
+    transition: margin-top .5s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#mobile-header .zippy-navigation-container#mobile-menu-sub-header #breakout-nav #mob-location.local-page {
+	width: calc(100% - 85px);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#mobile-header .zippy-navigation-container#mobile-menu-sub-header #breakout-nav #mob-location {
+	color: #fff;
+    float: left;
+    font-size: 1.5rem;
+    height: 5.25rem;
+    line-height: 4.75rem;
+    overflow: hidden;
+    padding-left: 1.5rem;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+#mobile-header .zippy-navigation-container#mobile-menu-sub-header #breakout-nav #mob-call-now {
+    float: right;
+    height: 5.25rem;
+    width: 85px;
+    display: inline-block;
+    background-color: #d52d37;
+    color: #fff;
+    text-align: center;
+}
+
+#mobile-header .zippy-navigation-container#mobile-menu-sub-header #breakout-nav #mob-call-now > i {
+    display: inline-block;
+    position: relative;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: .4rem;
+    margin-bottom: .5rem;
+}
+
+#mobile-header .zippy-navigation-container#mobile-menu-sub-header #breakout-nav #mob-call-now > span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    top: -.7rem;
+    position: relative;
+}
+
+#mobile-header .zippy-navigation-container#mobile-menu-sub-header:after {
+    background-color: transparent;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(0,0,0,.2)),color-stop(1,transparent));
+    background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,.2),transparent);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.2)),to(transparent));
+    background-image: -webkit-linear-gradient(top,rgba(0,0,0,.2),transparent);
+    background-image: linear-gradient(180deg,rgba(0,0,0,.2) 0,transparent);
+    content: "";
+    display: block;
+    height: .75rem;
+    width: 100%;
+}
+
+#mobile-navigation {
+    background-color: hsla(0,0%,93%,0);
+    height: 100%;
+    left: 0;
+    margin-left: -100%;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    -webkit-transition: margin-left .5s,background-color .5s ease .25s;
+    -icab-transition: margin-left .5s,background-color .5s ease .25s;
+    transition: margin-left .5s,background-color .5s ease .25s;
+    width: 100%;
+    z-index: 1500;
+}
+
+#mobile-navigation #mobile-menu-nav-container {
+    background-color: #969cbe;
+    min-height: 100vh;
+    position: relative;
+    width: 97%;
+    overflow: hidden;
+}
+
+html.open,html.open body{overflow:hidden;}
+
+@media only screen and (min-width: 360px) {
+	#mobile-navigation #mobile-menu-nav-container {
+	    width: 87%;
+	}
+}
+@media only screen and (min-width: 375px) {
+	#mobile-navigation #mobile-menu-nav-container {
+	    width: 84.12%;
+	}
+}	
+	
+
+#mobile-navigation #mobile-menu-nav-container nav {
+    width: 200%;
+    overflow: hidden;
+    position: relative;
+}
+
+#mobile-navigation #mobile-menu-nav-container nav.mobile-menu-main-nav {
+	width: 200%;
+}
+
+#mobile-navigation #mobile-menu-nav-container ol, 
+#mobile-navigation #mobile-menu-nav-container ul {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    margin: 0;
+    float: left;
+    width: 50%;
+    -webkit-transition: margin-left .5s;
+    -icab-transition: margin-left .5s;
+    transition: margin-left .5s;
+    z-index: 1;
+}
+
+#mobile-navigation #mobile-menu-nav-container li {
+    list-style: none;
+    position: relative;
+    margin-bottom: -1px;
+}
+
+#mobile-navigation #mobile-menu-nav-container li.current {
+	background-color: #003c84;
+}
+
+#mobile-navigation #mobile-menu-nav-container li.current a {
+    border-bottom: 1px solid #003c84;
+}
+
+#mobile-navigation #mobile-menu-nav-container nav a {
+    border-bottom: 1px solid #424d8a;
+    font-size: 1.75rem;
+    height: 4.5rem;
+    line-height: 2.25;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+#mobile-navigation #mobile-menu-nav-container a {
+    color: #fff;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+}
+
+#mobile-navigation #mobile-menu-nav-container nav .mobile-menu-main-subnav {
+    display: none;
+    background-color: #8188b1;
+}
+
+#mobile-navigation #mobile-menu-nav-container nav a.close-main-subnav {
+    font-size: 3rem;
+    height: 4.8rem;
+    left: 0;
+    line-height: 4.5rem;
+    margin: 0;
+    border-bottom: none!important;
+    position: absolute;
+    text-align: center;
+    top: -0.3rem;
+    width: 4.5rem;
+    z-index: 100;
+}
+
+#mobile-navigation #mobile-menu-nav-container nav .mobile-menu-main-subnav li.top-level {
+    background-color: #576197;
+}
+
+#mobile-navigation #mobile-menu-nav-container nav .mobile-menu-main-subnav li.top-level a {
+    border-bottom: none;
+}
+
+#mobile-navigation #mobile-menu-nav-container nav.mobile-menu-secondary-nav {
+    padding-bottom: 6rem;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+#mobile-navigation #mobile-menu-nav-container nav.mobile-menu-secondary-nav a {
+    border-bottom: medium none;
+    font-size: 1.25rem;
+    font-weight: 200;
+    height: 4rem;
+    letter-spacing: 1px;
+    line-height: 3;
+    text-transform: uppercase;
+}
+
+#mobile-navigation #mobile-menu-nav-container #close-side-nav {
+    font-size: 3rem;
+    height: 4.8rem;
+    left: 0;
+    line-height: 4.5rem;
+    position: absolute;
+    text-align: center;
+    top: -0.3rem;
+    width: 4.5rem;
+    z-index: 100;
+    -webkit-transition: left .5s;
+    -icab-transition: left .5s;
+    transition: left .5s;
+}
+
+#mobile-navigation #mobile-menu-nav-container a:active, 
+#mobile-navigation #mobile-menu-nav-container a:focus {
+    outline: none!important;
+}
+
+#mobile-navigation #mobile-menu-nav-container nav.mobile-menu-main-nav:after {
+    background-color: #8188b1;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+
+
+/** Main menu Open **/
+
+#mobile-navigation.open {
+    background-color: hsla(0,0%,93%,.7);
+    margin-left: 0;
+}
+
+
+
+/** Submenu Open **/
+
+#mobile-navigation #mobile-menu-nav-container.subnav-open a#close-side-nav {
+	left:-100%;
+}
+
+#mobile-navigation #mobile-menu-nav-container.subnav-open ul#mobile-menu-main-nav {
+	margin-left: -50%;
+}
+
+
+
+
+/** After scrolling 100px in mobile devices **/
+
+#mobile-header.sticky .zippy-navigation-container#mobile-menu-header {
+	background-color: #013B80;
+}
+
+#mobile-header.sticky .zippy-navigation-container#mobile-menu-header #open-side-nav,
+#mobile-header.sticky .zippy-navigation-container#mobile-menu-header #site-search {
+	color: #fff;
+}
+
+#mobile-header #mobile-menu-sub-header.zippy-navigation-container {
+    -webkit-transition: margin-top .5s;
+    -icab-transition: margin-top .5s;
+    transition: margin-top .5s;
+    width: 100%;
+}
+
+#mobile-header.sticky #mobile-menu-sub-header.zippy-navigation-container {
+	margin-top:-5.25rem;
+	width: 100%;
+	position: absolute;
+}
+
+
+#mobile-header.sticky #mobile-menu-sub-header.zippy-navigation-container>#nav-phone-number:before { 
+	left:0; 
+}
+
+#mobile-header.sticky #mobile-menu-sub-header.zippy-navigation-container>#nav-phone-number:after { 
+	right:0; 
+}
