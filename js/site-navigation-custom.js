@@ -106,7 +106,7 @@ $(document).ready(function(){
 
     /* *~~~~~~~~~ Dropdown menu add 'active' class on hover ~~~~~~~~~* */
 
-    $("body header .rr_row .menu_con .main_menu > ul > li.drop-down-tab").hover(function() {
+    $(".menu_con .main_menu > ul > li.drop-down-tab").hover(function() {
         $(this).addClass("active");
     }, function() {
         $(this).removeClass("active");
@@ -115,7 +115,7 @@ $(document).ready(function(){
     /* *~~~~~~~~~ After scroll - menu functions ~~~~~~~~~* */
     
     $(window).scroll(function(){
-        var window_top = $(window).scrollTop() + 100; 
+        var window_top = $(window).scrollTop() + 110; 
         var div_top = $('#nav-anchor').offset().top;
             if (window_top > div_top) {
                 $('aside, #mobile-header').addClass('sticky');
@@ -175,4 +175,44 @@ $(document).ready(function(){
             }
         }
     });
+
+// Hiding topnavbar onscroll
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('.header-top').outerHeight();
+
+    $(window).scroll(function(event){
+      didScroll = true;
+    });
+
+    // run hasScrolled() and reset didScroll status
+    setInterval(function() {
+      if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+      }
+    }, 250);
+    function hasScrolled() {
+      var st = $(this).scrollTop();
+      if (Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+      if (st > lastScrollTop && st > navbarHeight) {
+        // Scroll Down
+        $('.header-top').removeClass('nav-down').addClass('nav-up');
+        $('header').addClass('header-up');
+        $('aside.sticky').removeClass('scrollUp');
+        $('.header-bottom').addClass('header-bottom-up');
+      } else {
+        // Scroll Up
+        // If did not scroll past the document (possible on mac)...
+      if(st + $(window).height() < $(document).height()) { 
+        $('.header-top').removeClass('nav-up').addClass('nav-down');
+        $('header').removeClass('header-up');
+        $('aside.sticky').addClass('scrollUp');
+        $('.header-bottom').removeClass('header-bottom-up');
+      } }
+      lastScrollTop = st;
+}
 });

@@ -41,6 +41,7 @@ body {
     line-height: 1.42857143;
     color: #666;
     background-color: #fff;
+    padding-top: 146px;
 }
 
 
@@ -61,14 +62,27 @@ header {
     min-width: 48rem;
     position: fixed;
     right: 0;
-    top: 20px;
+    top: 28px;
     width: 100%;
     z-index: 10000;
+    transition: top 0.2s ease-in-out;
 }
-
+header.header-up {
+    top: 0;
+}
 .header-top {
     background-color: #003254;
     color: #d8deef;
+    position: fixed;
+    height: 30px;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+    transition: top 0.1s ease-in-out;
+}
+.header-top.nav-up {
+  top: -30px;
+  transition: top 1s ease-in-out;
 }
 .header-social-section {
     float: right;
@@ -82,6 +96,24 @@ header {
     color: #d8deef;
 }
 
+.header-bottom {
+    position: fixed;
+    top: 132px;
+    background-color: rgba(216, 222, 239, 1);
+    width: 100%;
+} 
+.header-bottom-up {
+    top: 112px;
+    transition: top .2s ease;
+}
+.sticky + .header-bottom-up {
+    transition: top .2s ease;
+    top: 48px;
+}
+.nav-down + .sticky + .header-bottom {
+    transition: top .2s ease;
+    top: 76px;
+}
 body .rr_row {
 	margin: 0 auto;
     padding-left: 0;
@@ -108,7 +140,7 @@ body header, body header * {
 
 /* * ~~~~~~~~ Top thin blue menu (Career, Contact us...) CSS - Desktop view  ~~~~~~~~ * */
 
-body header .rr_row .menu_con .top_sec {
+.menu_con .top_sec {
 	width: 100%;
     height: 2rem;
     margin-left: 0;
@@ -120,20 +152,8 @@ body header .rr_row .menu_con .top_sec {
     transition: top .25s;
 }
 
-header:after {
-    content: "";
-    height: 2rem;
-    left: 50%;
-    position: absolute;
-    top: 0;
-    -webkit-transition: top .25s;
-    -icab-transition: top .25s;
-    transition: top .25s;
-    width: 50%;
-    z-index: -1;
-}
 
-body header .rr_row .menu_con .top_sec a {
+.menu_con .top_sec a {
     color: #d5d7e5;
     font-size: .75rem;
     line-height: 1.5;
@@ -142,7 +162,7 @@ body header .rr_row .menu_con .top_sec a {
     position: relative;
 }
 
-body header .rr_row .menu_con .top_sec a:after {
+.menu_con .top_sec a:after {
 	color: #8188b1;
     content: "|";
     left: auto;
@@ -151,7 +171,7 @@ body header .rr_row .menu_con .top_sec a:after {
     top: 0;
 }
 
-body header .rr_row .menu_con .top_sec a:last-child:after {
+.menu_con .top_sec a:last-child:after {
 	display: none;
 }
 
@@ -189,59 +209,96 @@ body header .rr_row .rr_logo .svg {
 
 /* * ~~~~~~~~ Main Menu CSS- Desktop View ~~~~~~~~ * */
 
-body header .rr_row .menu_con {
-	height: 6rem;
+.menu_con {
+	height: 4rem;
     padding-left: 0;
     text-align: right;
     -webkit-transition: height .25s;
     -icab-transition: height .25s;
     transition: height .25s;
-    width: 100%;
 }
 
-.header-custom .rr_row-2 {
-    height: 2rem;
+.custom-info ul {
+    display: flex;
+    margin-top: 25px;
 }
 
-body header .rr_row .menu_con .main_menu {
+.custom-info ul li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    margin: auto auto;
+    font-size: 16px;
+    position: relative;
+    padding-left: 42px;
+    color: #337ab7;
+}
+
+.sticky .custom-info ul {
+    margin-top: 18px;
+    transition: all 0.5s ease;
+}
+.sticky .custom-info ul li {
+    font-size: 13px;
+    transition: all 0.5s ease;
+}
+.sticky .custom-info_text:first-of-type, .sticky .custom-info_drop {
+    display: none;
+}
+.sticky .custom-info_text.custom-info_tell {
+    display: inline;
+}
+.sticky .custom-info ul li i {
+    font-size: 23px;
+    transition: all 0.5s ease;
+}
+.sticky br {
+    display: none;
+}
+
+.custom-info ul li i {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    font-size: 35px;
+    color: #ffe617;
+}
+.custom-info ul li a:hover, .custom-info ul li a:hover span {
+    text-decoration: none;
+    color: #23527c;
+}
+
+.custom-info ul li div {
+    display: inline-block;
+}
+
+br + .custom-info_text, .custom-info_call .custom-info_text  {
+    color: #fff;
+}
+
+
+
+.menu_con .main_menu {
 	position: relative;
     width: 100%;
     z-index: 200;
-    top: 32px;
+    top: 90%;
+    transform: translate(0, -50%);
     -webkit-transition: top .25s;
     transition: top .25s;
     display: block;
 }
 
-body header .rr_row .menu_con .main_menu > ul {
-	display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: -o-flex;
-    -js-display: flex;
+.menu_con .main_menu > ul {
     display: flex;
-    -webkit-flex-wrap: nowrap;
-    -khtml-flex-wrap: nowrap;
-    -icab-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    -o-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    -webkit-justify-content: space-between;
-    -khtml-justify-content: space-between;
-    -icab-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
-    -o-justify-content: space-between;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: 0;
-    overflow: visible;
+    justify-content: space-around;
+    margin: 0 auto;
     padding: 0;
-    text-align: right;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li {
+.menu_con .main_menu > ul > li {
 	display: inline-block;
     font-size: 1.125rem;
     height: 4rem;
@@ -256,9 +313,8 @@ body header .rr_row .menu_con .main_menu > ul > li {
     transition: height .25s;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li > a {
-    color: #d8deef;
-    display: table;
+.menu_con .main_menu > ul > li > a {
+    color: #07346b;
     font-size: 0.9rem;
     height: 100%;
     line-height: 1;
@@ -270,12 +326,6 @@ body header .rr_row .menu_con .main_menu > ul > li > a {
 
 
 
-body header .rr_row .menu_con .main_menu > ul > li > a > span {
-	display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-    position: relative;
-}
 
 /*************/
 
@@ -283,30 +333,30 @@ body header .rr_row .menu_con .main_menu > ul > li > a > span {
 
 /* * ~~~~~~~~ Main Menu Dropdown's CSS- Desktop View ~~~~~~~~ * */
 
-body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab {
+.menu_con .main_menu > ul > li .nav-drop-down.residential-tab {
 	margin-left: -15rem;
 	width: 38rem;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down.commercial-tab {
+.menu_con .main_menu > ul > li .nav-drop-down.commercial-tab {
 	margin-left: -15rem;
     width: 38rem;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down.how-to-tab {
-    margin-left: -16.4rem;
+.menu_con .main_menu > ul > li .nav-drop-down.how-to-tab {
+    margin-left: -10.4rem;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul.service-singles {
+.menu_con .main_menu > ul > li .nav-drop-down ul.service-singles {
     width: 15rem!important;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul.service-singles > li {
+.menu_con .main_menu > ul > li .nav-drop-down ul.service-singles > li {
     display: inline-block;
     margin-bottom: 1rem;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul.service-singles > li > a {
+.menu_con .main_menu > ul > li .nav-drop-down ul.service-singles > li > a {
 	color: #2d397d;
     font-size: 1rem;
     font-weight: 700;
@@ -315,7 +365,7 @@ body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul.service-sin
     text-transform: uppercase;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down {
+.menu_con .main_menu > ul > li .nav-drop-down {
 	color: #3c5aaf;
     background-color: #fff;
     -webkit-box-shadow: 0 0 0.75rem rgba(0,0,0,.5);
@@ -326,14 +376,16 @@ body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down {
     padding: 1.5rem 2rem 2rem;
     position: absolute;
     text-align: left;
-    top: 4rem;
+    top: 3rem;
     width: 19rem;
     z-index: 450;
     overflow: auto;
     height: auto;
+    border: 1px solid grey;
+    border-radius: 5px;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down .emergency-phone {
+.menu_con .main_menu > ul > li .nav-drop-down .emergency-phone {
 	color: #3c5aaf;
     background-color: #ebeef7;
     border-radius: .5rem;
@@ -347,14 +399,14 @@ body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down .emergency-pho
     width: 100%;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down .emergency-phone strong {
+.menu_con .main_menu > ul > li .nav-drop-down .emergency-phone strong {
 	color: #2d397d;
     font-size: 1.125rem;
     line-height: 1.33333;
     text-transform: uppercase;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul {
+.menu_con .main_menu > ul > li .nav-drop-down ul {
 	display: block;
     float: left;
     margin: 1rem 0 0;
@@ -364,7 +416,7 @@ body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul {
     padding-right: 1rem;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul > li {
+.menu_con .main_menu > ul > li .nav-drop-down ul > li {
 	color: #3c5aaf;
     display: block;
     font-size: .9rem;
@@ -374,7 +426,7 @@ body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul > li {
     width: 100%;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul > li:first-child > a {
+.menu_con .main_menu > ul > li .nav-drop-down ul > li:first-child > a {
 	color: #2d397d;
     font-size: 1rem;
     font-weight: 700;
@@ -383,7 +435,7 @@ body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul > li:first-
     text-transform: uppercase;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li.drop-down-tab > a > span:after {
+.menu_con .main_menu > ul > li.drop-down-tab > a > span::after  {
 	content: "\f078";
     font-size: 1rem;
     height: 1.8rem;
@@ -408,18 +460,17 @@ body header .rr_row .menu_con .main_menu > ul > li.drop-down-tab > a > span:afte
 
 /* *~~~~~~~~~ Dropdown menu hover CSS - Desktop View ~~~~~~~~* */
 
-body header .rr_row .menu_con .main_menu > ul > li.drop-down-tab.active > a > span:after {
-	display: none;
+.menu_con .main_menu > ul > li.drop-down-tab.active > a > span:after {
+	visibility: hidden;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li.drop-down-tab.active > a {
-	background: #fff;
-    border-bottom: .375rem solid #fff;
+.menu_con .main_menu > ul > li.drop-down-tab.active > a {
+    border-bottom: 2px solid #ffe617;
     color: #2d397d;
     z-index: 500;
 }
 
-body header .rr_row .menu_con .main_menu > ul > li.drop-down-tab.active .nav-drop-down {
+.menu_con .main_menu > ul > li.drop-down-tab.active .nav-drop-down {
 	display: block;
 }
 
@@ -564,7 +615,7 @@ body .header-custom.sticky .rr_row .rr_logo {
 body .header-custom.sticky .rr_row .rr_logo .svg {
 	width: 100%;
 	height: auto;
-	top: -3px; 
+	top: 3px; 
 }
 
 body .header-custom.sticky .rr_row .menu_con .main_menu > ul > li {
@@ -749,7 +800,12 @@ aside.sticky {
     top: 0;
     left: 0;
     z-index: 900;
-    margin-top:48px;
+    margin-top: 112px;
+    transition: margin-top 0.3s;
+}
+aside.sticky.scrollUp {
+    margin-top: 140px;
+    transition: margin-top 0.3s;
 }
 
 aside a.nav-active {
