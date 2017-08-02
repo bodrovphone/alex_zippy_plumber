@@ -101,6 +101,7 @@ header.header-up {
     top: 132px;
     background-color: rgba(216, 222, 239, 1);
     width: 100%;
+    z-index: 450;
 } 
 .header-bottom-up {
     top: 112px;
@@ -283,7 +284,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 	position: relative;
     width: 100%;
     z-index: 200;
-    top: 90%;
+    top: 60%;
     transform: translate(0, -50%);
     -webkit-transition: top .25s;
     transition: top .25s;
@@ -301,7 +302,6 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 .menu_con .main_menu > ul > li {
 	display: inline-block;
     font-size: 1.125rem;
-    height: 4rem;
     line-height: 1;
     list-style-type: none;
     margin: 0;
@@ -311,6 +311,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
     -webkit-transition: height .25s;
     -icab-transition: height .25s;
     transition: height .25s;
+    height: 2rem;
 }
 
 .menu_con .main_menu > ul > li > a {
@@ -376,7 +377,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
     padding: 1.5rem 2rem 2rem;
     position: absolute;
     text-align: left;
-    top: 3rem;
+    top: 2rem;
     width: 19rem;
     z-index: 450;
     overflow: auto;
@@ -665,6 +666,9 @@ span#call-now span.local-page-phone {
     font-weight: 700;
 }
 
+.custom-fix-transparensy {
+    position: static !important;
+}
 
 
 /* * ~~~~~~~~~ Media Queries for different resolutions of Desktop ~~~~~~~~~ * */
@@ -799,13 +803,11 @@ aside.sticky {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 900;
+    z-index: 0;
     margin-top: 112px;
-    transition: margin-top 0.3s;
 }
 aside.sticky.scrollUp {
     margin-top: 140px;
-    transition: margin-top 0.3s;
 }
 
 aside a.nav-active {

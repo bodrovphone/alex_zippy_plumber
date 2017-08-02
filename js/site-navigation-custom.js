@@ -115,7 +115,7 @@ $(document).ready(function(){
     /* *~~~~~~~~~ After scroll - menu functions ~~~~~~~~~* */
     
     $(window).scroll(function(){
-        var window_top = $(window).scrollTop() + 110; 
+        var window_top = $(window).scrollTop() + 80; 
         var div_top = $('#nav-anchor').offset().top;
             if (window_top > div_top) {
                 $('aside, #mobile-header').addClass('sticky');
