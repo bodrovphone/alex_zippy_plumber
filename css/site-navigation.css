@@ -41,7 +41,7 @@ body {
     line-height: 1.42857143;
     color: #666;
     background-color: #fff;
-    padding-top: 146px;
+    padding-top: 130px;
 }
 
 
@@ -54,7 +54,7 @@ main, #sidebar {
 
 
 header {
-    background: url(../images/header_line.png) #07346b repeat-x 0px 0px;
+    background-color: #003C84;
     font-size: 1rem;
     height: auto;
     left: 0;
@@ -71,7 +71,7 @@ header.header-up {
     top: 0;
 }
 .header-top {
-    background-color: #003254;
+    background-color: #07346B;
     color: #d8deef;
     position: fixed;
     height: 30px;
@@ -95,11 +95,14 @@ header.header-up {
 .header-social-section li a {
     color: #d8deef;
 }
+.header-social-section li i {
+    margin-right: 5px;
+}
 
 .header-bottom {
     position: fixed;
-    top: 132px;
-    background-color: rgba(216, 222, 239, 1);
+    top: 140px;
+    background-color: #07346B;
     width: 100%;
     z-index: 450;
 } 
@@ -125,14 +128,23 @@ body .rr_row {
     display: block;
     float: none;
     margin: auto;
-    -webkit-transition: height .25s;
-    -icab-transition: height .25s;
-    transition: height .25s;
+    -webkit-transition: height .2s;
+    -icab-transition: height .2s;
+    transition: height .2s;
 }
 
 body header, body header * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+main .container section {
+    padding-top: 45px;
+}
+
+main .container section h1 {
+    padding-top: 55px; 
+    margin-top: 0;
 }
 
 /*************/
@@ -211,7 +223,7 @@ body header .rr_row .rr_logo .svg {
 /* * ~~~~~~~~ Main Menu CSS- Desktop View ~~~~~~~~ * */
 
 .menu_con {
-	height: 4rem;
+	height: 40px;
     padding-left: 0;
     text-align: right;
     -webkit-transition: height .25s;
@@ -263,7 +275,7 @@ body header .rr_row .rr_logo .svg {
     transform: translate(0, -50%);
     left: 0;
     font-size: 35px;
-    color: #ffe617;
+    color: #FFCC00;
 }
 .custom-info ul li a:hover, .custom-info ul li a:hover span {
     text-decoration: none;
@@ -284,7 +296,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 	position: relative;
     width: 100%;
     z-index: 200;
-    top: 60%;
+    top: 45%;
     transform: translate(0, -50%);
     -webkit-transition: top .25s;
     transition: top .25s;
@@ -305,7 +317,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
     line-height: 1;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10px 0 33px 20px;
     position: relative;
     text-align: center;
     -webkit-transition: height .25s;
@@ -315,7 +327,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 }
 
 .menu_con .main_menu > ul > li > a {
-    color: #07346b;
+    color: #fff;
     font-size: 0.9rem;
     height: 100%;
     line-height: 1;
@@ -370,20 +382,18 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 	color: #3c5aaf;
     background-color: #fff;
     -webkit-box-shadow: 0 0 0.75rem rgba(0,0,0,.5);
-    box-shadow: 0 0 0.75rem rgba(0,0,0,.5);
+    box-shadow: 0 10px 0.75rem rgba(0,0,0,.5);
     display: none;
     left: 50%;
     margin-left: -18rem;
     padding: 1.5rem 2rem 2rem;
     position: absolute;
     text-align: left;
-    top: 2rem;
+    top: 41px;
     width: 19rem;
     z-index: 450;
     overflow: auto;
     height: auto;
-    border: 1px solid grey;
-    border-radius: 5px;
 }
 
 .menu_con .main_menu > ul > li .nav-drop-down .emergency-phone {
@@ -466,7 +476,6 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 }
 
 .menu_con .main_menu > ul > li.drop-down-tab.active > a {
-    border-bottom: 2px solid #ffe617;
     color: #2d397d;
     z-index: 500;
 }
@@ -572,8 +581,8 @@ body .sub-header-custom .rr_row {
 /* * ~~~~~~~ DESKTOP MENU after scroll adjustments ~~~~~~~ * */
 
 body header.header-custom.sticky {
-	background-color: #07346A;
-	transition: 0.3s ease all;
+	background-color: #003C84;
+	transition: 0.2s ease all;
 }
 
 body header.header-custom.sticky .rr_row .menu_con .main_menu > ul > li > a {
@@ -583,6 +592,10 @@ body header.header-custom.sticky .rr_row .menu_con .main_menu > ul > li > a {
 
 body header.header-custom.sticky .rr_row .menu_con .main_menu > ul > li.active > a {
 	border-bottom-color: #fff;
+}
+
+.menu_con .main_menu > ul > li.active {
+    background-color: #fff;
 }
 
 body .sub-header-custom.sticky {
@@ -804,10 +817,10 @@ aside.sticky {
     top: 0;
     left: 0;
     z-index: 0;
-    margin-top: 112px;
+    margin-top: 88px;
 }
 aside.sticky.scrollUp {
-    margin-top: 140px;
+    margin-top: 116px;
 }
 
 aside a.nav-active {
@@ -819,10 +832,6 @@ aside a:hover, aside a:active, aside a:focus {
 	text-decoration: none;
 } 
 
-
-h1 {
-	padding-top: 30px;
-}
 
 aside > ul > li:last-child {
 	display: none;
