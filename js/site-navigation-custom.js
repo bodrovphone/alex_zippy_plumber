@@ -177,42 +177,11 @@ $(document).ready(function(){
     });
 
 // Hiding topnavbar onscroll
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('.header-top').outerHeight();
-
-    $(window).scroll(function(event){
-      didScroll = true;
-    });
-
-    // run hasScrolled() and reset didScroll status
-    setInterval(function() {
-      if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-      }
-    }, 250);
-    function hasScrolled() {
-      var st = $(this).scrollTop();
-      if (Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-      if (st > lastScrollTop && st > navbarHeight) {
-        // Scroll Down
-        $('.header-top').removeClass('nav-down').addClass('nav-up');
-        $('header').addClass('header-up');
-        $('aside.sticky').removeClass('scrollUp');
-        $('.header-bottom').addClass('header-bottom-up');
+$(window).scroll(function(event){
+      if (window.scrollY > 30) {
+        $('.header-top').addClass('nav-up').removeClass('nav-down');
       } else {
-        // Scroll Up
-        // If did not scroll past the document (possible on mac)...
-      if(st + $(window).height() < $(document).height()) { 
         $('.header-top').removeClass('nav-up').addClass('nav-down');
-        $('header').removeClass('header-up');
-        $('aside.sticky').addClass('scrollUp');
-        $('.header-bottom').removeClass('header-bottom-up');
-      } }
-      lastScrollTop = st;
-}
+      }
+    });
 });

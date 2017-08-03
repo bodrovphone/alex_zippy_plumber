@@ -62,7 +62,7 @@ header {
     min-width: 48rem;
     position: fixed;
     right: 0;
-    top: 28px;
+    top: 0;
     width: 100%;
     z-index: 10000;
     transition: top 0.2s ease-in-out;
@@ -71,18 +71,22 @@ header.header-up {
     top: 0;
 }
 .header-top {
-    background-color: #07346B;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003c84+0,07346b+100 */
+    background: #003c84; /* Old browsers */
+    background: -moz-linear-gradient(left, #003c84 0%, #07346b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #003c84 0%,#07346b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #003c84 0%,#07346b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003c84', endColorstr='#07346b',GradientType=1 ); /* IE6-9 */
     color: #d8deef;
-    position: fixed;
     height: 30px;
-    top: 0;
     width: 100%;
     z-index: 200;
-    transition: top 0.1s ease-in-out;
+    transition: height 0.1s ease-in-out;
 }
 .header-top.nav-up {
-  top: -30px;
-  transition: top 1s ease-in-out;
+  height: 0;
+  overflow: hidden;
+  transition: height .1s ease-in-out;
 }
 .header-social-section {
     float: right;
@@ -90,7 +94,7 @@ header.header-up {
 .header-social-section li {
     display: inline;
     border-left: 1px solid #444444;
-    padding: 10px;
+    padding: 0 10px 8px 10px;
 }
 .header-social-section li a {
     color: #d8deef;
@@ -100,24 +104,15 @@ header.header-up {
 }
 
 .header-bottom {
-    position: fixed;
-    top: 140px;
-    background-color: #07346B;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003c84+0,07346b+100 */
+background: #003c84; /* Old browsers */
+background: -moz-linear-gradient(left, #003c84 0%, #07346b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #003c84 0%,#07346b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #003c84 0%,#07346b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003c84', endColorstr='#07346b',GradientType=1 ); /* IE6-9 */
     width: 100%;
     z-index: 450;
 } 
-.header-bottom-up {
-    top: 112px;
-    transition: top .2s ease;
-}
-.sticky + .header-bottom-up {
-    transition: top .2s ease;
-    top: 48px;
-}
-.nav-down + .sticky + .header-bottom {
-    transition: top .2s ease;
-    top: 76px;
-}
 body .rr_row {
 	margin: 0 auto;
     padding-left: 0;
@@ -139,11 +134,11 @@ body header, body header * {
 }
 
 main .container section {
-    padding-top: 45px;
+    padding-top: 40px;
 }
 
 main .container section h1 {
-    padding-top: 55px; 
+    padding-top: 12px; 
     margin-top: 0;
 }
 
@@ -296,7 +291,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 	position: relative;
     width: 100%;
     z-index: 200;
-    top: 45%;
+    top: 56%;
     transform: translate(0, -50%);
     -webkit-transition: top .25s;
     transition: top .25s;
@@ -306,9 +301,8 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 .menu_con .main_menu > ul {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 auto;
-    padding: 0;
 }
 
 .menu_con .main_menu > ul > li {
@@ -317,7 +311,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
     line-height: 1;
     list-style-type: none;
     margin: 0;
-    padding: 10px 0 33px 20px;
+    padding: 10px 0 35px 20px;
     position: relative;
     text-align: center;
     -webkit-transition: height .25s;
@@ -348,9 +342,11 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 
 .menu_con .main_menu > ul > li .nav-drop-down.residential-tab {
 	margin-left: -15rem;
-	width: 38rem;
+	width: 43rem;
 }
-
+.residential-tab .service-singles {
+    display: flex !important;
+}
 .menu_con .main_menu > ul > li .nav-drop-down.commercial-tab {
 	margin-left: -15rem;
     width: 38rem;
@@ -361,7 +357,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 }
 
 .menu_con .main_menu > ul > li .nav-drop-down ul.service-singles {
-    width: 15rem!important;
+    width: 100%;
 }
 
 .menu_con .main_menu > ul > li .nav-drop-down ul.service-singles > li {
@@ -389,7 +385,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
     padding: 1.5rem 2rem 2rem;
     position: absolute;
     text-align: left;
-    top: 41px;
+    top: 40px;
     width: 19rem;
     z-index: 450;
     overflow: auto;
@@ -481,7 +477,8 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 }
 
 .menu_con .main_menu > ul > li.drop-down-tab.active .nav-drop-down {
-	display: block;
+	display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -832,10 +829,6 @@ aside a:hover, aside a:active, aside a:focus {
 	text-decoration: none;
 } 
 
-
-aside > ul > li:last-child {
-	display: none;
-}
 
 @media (max-width: 768px) {
 	aside a {
