@@ -149,9 +149,9 @@ $(document).ready(function(){
     /* * ~~~~~~ Keep the curent menu item for the section active, on section scroll ~~~~~~ * */
     
     $(window).scroll(function(){
-        var windowPos = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        var docHeight = $(document).height();
+        var windowPos = $(window).scrollTop() + 45;
+        var windowHeight = $(window).height() + 45;
+        var docHeight = $(document).height() + 45;
 
         for (var i=0; i < aArray.length; i++) {
             var theID = aArray[i];

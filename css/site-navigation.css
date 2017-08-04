@@ -54,7 +54,7 @@ main, #sidebar {
 
 
 header {
-    background-color: #003C84;
+    background-color: #151d59;
     font-size: 1rem;
     height: auto;
     left: 0;
@@ -72,11 +72,7 @@ header.header-up {
 }
 .header-top {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003c84+0,07346b+100 */
-    background: #003c84; /* Old browsers */
-    background: -moz-linear-gradient(left, #003c84 0%, #07346b 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #003c84 0%,#07346b 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #003c84 0%,#07346b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003c84', endColorstr='#07346b',GradientType=1 ); /* IE6-9 */
+    background: #364d89; /* Old browsers */
     color: #d8deef;
     height: 30px;
     width: 100%;
@@ -104,21 +100,15 @@ header.header-up {
 }
 
 .header-bottom {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003c84+0,07346b+100 */
-background: #003c84; /* Old browsers */
-background: -moz-linear-gradient(left, #003c84 0%, #07346b 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #003c84 0%,#07346b 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #003c84 0%,#07346b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003c84', endColorstr='#07346b',GradientType=1 ); /* IE6-9 */
+    background: #364d89;
     width: 100%;
     z-index: 450;
 } 
-body .rr_row {
+body .zp_row {
 	margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
     position: relative;
-    width: 100%;	
     height: 7rem;
     display: block;
     float: none;
@@ -134,7 +124,7 @@ body header, body header * {
 }
 
 main .container section {
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 main .container section h1 {
@@ -189,7 +179,7 @@ main .container section h1 {
 
 /* * ~~~~~~~~ Logo CSS - Desktop view  ~~~~~~~~ * */
 
-body header .rr_row .rr_logo {
+body header .zp_row .zp_logo {
     height: 3rem;
     left: .75rem;
     position: absolute;
@@ -201,7 +191,7 @@ body header .rr_row .rr_logo {
     transition: height .25s,width .25s;
 }
 
-body header .rr_row .rr_logo .svg {
+body header .zp_row .zp_logo .svg {
     bottom: 0;
     display: block;
     height: 2.7rem;
@@ -218,8 +208,7 @@ body header .rr_row .rr_logo .svg {
 /* * ~~~~~~~~ Main Menu CSS- Desktop View ~~~~~~~~ * */
 
 .menu_con {
-	height: 40px;
-    padding-left: 0;
+	height: 60px;
     text-align: right;
     -webkit-transition: height .25s;
     -icab-transition: height .25s;
@@ -270,7 +259,7 @@ body header .rr_row .rr_logo .svg {
     transform: translate(0, -50%);
     left: 0;
     font-size: 35px;
-    color: #FFCC00;
+    color: #ffdf00;
 }
 .custom-info ul li a:hover, .custom-info ul li a:hover span {
     text-decoration: none;
@@ -285,11 +274,15 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
     color: #fff;
 }
 
+.custom-info_call .custom-info_tell  {
+    color: #ffdf00;
+}
+
 
 
 .menu_con .main_menu {
 	position: relative;
-    width: 100%;
+    width: inherit;
     z-index: 200;
     top: 56%;
     transform: translate(0, -50%);
@@ -303,6 +296,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
     flex-wrap: nowrap;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 0 55px 0px 5px;
 }
 
 .menu_con .main_menu > ul > li {
@@ -534,7 +528,7 @@ body .sub-header-custom:before {
     margin: auto;
 }    
 
-body .sub-header-custom .rr_row #map-marker {
+body .sub-header-custom .zp_row #map-marker {
     color: #d52d37;
     float: left;
     line-height: 4rem;
@@ -544,7 +538,7 @@ body .sub-header-custom .rr_row #map-marker {
     text-align: center;
 }
 
-body .sub-header-custom .rr_row #header-location {
+body .sub-header-custom .zp_row #header-location {
 	line-height: 4rem;
     display: inline-block;
     float: left;
@@ -554,7 +548,7 @@ body .sub-header-custom .rr_row #header-location {
     text-decoration: none;
 }
 
-body .sub-header-custom .rr_row .desktop-header-phone {
+body .sub-header-custom .zp_row .desktop-header-phone {
 	color: #d52d37;
     float: right;
     font-size: 1.375rem;
@@ -565,11 +559,11 @@ body .sub-header-custom .rr_row .desktop-header-phone {
     position: relative;
 }
 
-body .sub-header-custom .rr_row .desktop-header-phone > strong {
+body .sub-header-custom .zp_row .desktop-header-phone > strong {
 	font-size: 1.5rem;
 }
 
-body .sub-header-custom .rr_row {
+body .sub-header-custom .zp_row {
     height: 4rem;
 }
 
@@ -582,12 +576,12 @@ body header.header-custom.sticky {
 	transition: 0.2s ease all;
 }
 
-body header.header-custom.sticky .rr_row .menu_con .main_menu > ul > li > a {
+body header.header-custom.sticky .zp_row .menu_con .main_menu > ul > li > a {
 	border-bottom-color: #07346A;
 	color: #fff;
 }
 
-body header.header-custom.sticky .rr_row .menu_con .main_menu > ul > li.active > a {
+body header.header-custom.sticky .zp_row .menu_con .main_menu > ul > li.active > a {
 	border-bottom-color: #fff;
 }
 
@@ -601,50 +595,50 @@ body .sub-header-custom.sticky {
     transition: top .25s 0ms;
 }
 
-body .header-custom.sticky .rr_row {
+body .header-custom.sticky .zp_row {
 	height: 3rem;
 }
 
-body .header-custom.sticky .rr_row .menu_con {
+body .header-custom.sticky .zp_row .menu_con {
    	padding-left: 23%;
    	height: 3rem;
 }
 
-body .header-custom.sticky .rr_row .menu_con .main_menu > ul > li > a {
+body .header-custom.sticky .zp_row .menu_con .main_menu > ul > li > a {
     font-size: 1rem;
     padding-left: .125rem;
     padding-right: .125rem;
 }
 
-body .header-custom.sticky .rr_row .rr_logo {
+body .header-custom.sticky .zp_row .zp_logo {
     left: .75rem;
     top: 0;
     overflow: hidden;
     width: 11rem;
 }
 
-body .header-custom.sticky .rr_row .rr_logo .svg {
+body .header-custom.sticky .zp_row .zp_logo .svg {
 	width: 100%;
 	height: auto;
 	top: 3px; 
 }
 
-body .header-custom.sticky .rr_row .menu_con .main_menu > ul > li {
+body .header-custom.sticky .zp_row .menu_con .main_menu > ul > li {
     height: 3rem;
     min-width: 55px;
 }
 
-body header.header-custom.sticky .rr_row .menu_con .main_menu, 
-body header.header-custom.sticky .rr_row .menu_con .top_sec,
+body header.header-custom.sticky .zp_row .menu_con .main_menu, 
+body header.header-custom.sticky .zp_row .menu_con .top_sec,
 body header.header-custom.sticky:after {
 	top: -2rem;
 }
 
-body .header-custom.sticky .rr_row .main_menu > ul > li > a > span br {
+body .header-custom.sticky .zp_row .main_menu > ul > li > a > span br {
 	display: none;
 }
 
-body .header-custom.sticky .rr_row .menu_con .main_menu > ul > li .nav-drop-down {
+body .header-custom.sticky .zp_row .menu_con .main_menu > ul > li .nav-drop-down {
     top: 3rem;
 }
 
@@ -684,12 +678,6 @@ span#call-now span.local-page-phone {
 /* * ~~~~~~~~~ Media Queries for different resolutions of Desktop ~~~~~~~~~ * */
 
 @media only screen and (min-width: 768px) {
-	body .rr_row {
-	    max-width: 64rem;
-    	min-width: 48rem;
-    	padding-left: .75rem;
-    	padding-right: .75rem;
-	}
 	header.sub-header-custom.splash {
 	    display: block;
 	}
@@ -699,75 +687,70 @@ span#call-now span.local-page-phone {
 }
 
 @media (min-width: 1024px) {
-	body .header-custom.sticky .rr_row .menu_con {
+	body .header-custom.sticky .zp_row .menu_con {
     	padding-left: 18%;
 	}
 }
 
 @media only screen and (min-width: 1128px) {
-	body .rr_row {
-	    max-width: 77rem;
-	    min-width: 70.5rem;
-	    padding-left: 1.5rem;
-	    padding-right: 1.5rem;
-	}
-	body header .rr_row .rr_logo {
+
+	body header .zp_row .zp_logo {
 	    height: 6rem;
 	    left: 1.5rem;
 	    width: 26rem;
 	}
-	body header .rr_row .top_sec {
+	body header .zp_row .top_sec {
 	    margin-left: 0;
 	    width: auto;
 	    display: block;
 	}
-	body header .rr_row .menu_con {
+	body header .zp_row .menu_con {
 	    padding-left: 20.5rem;
 	}
-	body .header-custom.sticky .rr_row .menu_con .main_menu > ul > li > a {
+	body .header-custom.sticky .zp_row .menu_con .main_menu > ul > li > a {
 	    padding-left: .5rem;
 	    padding-right: .75rem;
 	}
-	body .header-custom.sticky .rr_row .menu_con .main_menu > ul {
+	body .header-custom.sticky .zp_row .menu_con .main_menu > ul {
 	    padding-left: 50px;
 	}
-	body .header-custom.sticky .rr_row .rr_logo {
+	body .header-custom.sticky .zp_row .zp_logo {
 	    height: 3rem;
 	    left: 1.75rem;
 	    overflow: hidden;
 	    width: 15.5rem;
 	}
-	body header .rr_row .rr_logo .svg {
+	body header .zp_row .zp_logo .svg {
 		height: auto;
 		top: -9px;
 	}
 }
 
 @media (min-width: 1174px) {
-	body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab {
+	body header .zp_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab {
 		margin-left: -26rem;
     	width: 52rem;
 	}
-	body header .rr_row .menu_con .main_menu > ul > li .nav-drop-down.commercial-tab {
+	body header .zp_row .menu_con .main_menu > ul > li .nav-drop-down.commercial-tab {
 		margin-left: -26rem;
 	    width: 52rem;
 	}
 }
 
 @media (max-width: 921px) {
-	body header.header-custom.sticky .rr_row .menu_con .main_menu > ul > li.drop-down-tab > a > span:after {
+	body header.header-custom.sticky .zp_row .menu_con .main_menu > ul > li.drop-down-tab > a > span:after {
 		bottom: -9px;
 	}
 }
 
 @media (max-width: 1174px) and (min-width: 768px) {
-	body .header-custom .rr_row .menu_con .main_menu > ul > li .nav-drop-down ul {
+	body .header-custom .zp_row .menu_con .main_menu > ul > li .nav-drop-down ul {
     	width: 17rem;
 	}
-	body .header-custom .rr_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab > ul > li {
+	body .header-custom .zp_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab > ul > li {
 	    display: none;
 	}
-	body .header-custom .rr_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab > ul > li:first-child {
+	body .header-custom .zp_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab > ul > li:first-child {
 	    display: inline-block;
 	}
 }
@@ -780,7 +763,7 @@ span#call-now span.local-page-phone {
 
 aside {
 	float: left;
-    background-color: #FFCC00;
+    background-color: #ffdf00;
     border-bottom:solid 1px rgb(220,220,220);
     padding-top:10px;
     margin-top:0px;
@@ -805,7 +788,7 @@ aside a {
 	color: #333;
 	transition: 0.1s ease all;
 	padding:3px 15px 10px 15px;
-	border-bottom: 3px solid #FFCC00;
+	border-bottom: 3px solid #ffdf00;
 	display: block;  
 }
 
@@ -814,7 +797,7 @@ aside.sticky {
     top: 0;
     left: 0;
     z-index: 0;
-    margin-top: 88px;
+    margin-top: 108px;
 }
 aside.sticky.scrollUp {
     margin-top: 116px;
@@ -909,6 +892,13 @@ footer {
 	body .header-custom, body .sub-header-custom {
 		display: none !important;
 	}
+    aside.sticky {
+        margin-top: 54px;
+        transition: .2s all ease;
+    }
+    main .container section {
+        padding-top: 30px;
+    }
 }
 
 #mobile-header {
