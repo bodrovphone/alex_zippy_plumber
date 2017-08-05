@@ -36,7 +36,7 @@ html {
 }
 
 body {
-	font-family:acumin-pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family:acumin-pro,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #666;
@@ -44,12 +44,25 @@ body {
     padding-top: 130px;
 }
 
+/* * ~~~~~~~~~~ Few extra elements used in this demo ~~~~~~~~~ * */
+
+#hero_img {
+    height: 300px;
+    background: url('../images/plumbing-services2.png') no-repeat center center;
+    margin-top: 50px;
+}
+
+footer {
+    background: #999;
+    min-height: 260px;
+    margin-top: 50px;
+}
 
 
 header, footer, #hero_img, 
 main, #sidebar {
-	float: left;
-	width: 100%;
+    float: left;
+    width: 100%;
 }
 
 
@@ -105,7 +118,7 @@ header.header-up {
     z-index: 450;
 } 
 body .zp_row {
-	margin: 0 auto;
+    margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
     position: relative;
@@ -139,7 +152,7 @@ main .container section h1 {
 /* * ~~~~~~~~ Top thin blue menu (Career, Contact us...) CSS - Desktop view  ~~~~~~~~ * */
 
 .menu_con .top_sec {
-	width: 100%;
+    width: 100%;
     height: 2rem;
     margin-left: 0;
     text-align: right;
@@ -161,7 +174,7 @@ main .container section h1 {
 }
 
 .menu_con .top_sec a:after {
-	color: #8188b1;
+    color: #8188b1;
     content: "|";
     left: auto;
     position: absolute;
@@ -170,7 +183,7 @@ main .container section h1 {
 }
 
 .menu_con .top_sec a:last-child:after {
-	display: none;
+    display: none;
 }
 
 /*************/
@@ -208,7 +221,7 @@ body header .zp_row .zp_logo .svg {
 /* * ~~~~~~~~ Main Menu CSS- Desktop View ~~~~~~~~ * */
 
 .menu_con {
-	height: 60px;
+    height: 60px;
     text-align: right;
     -webkit-transition: height .25s;
     -icab-transition: height .25s;
@@ -281,7 +294,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 
 
 .menu_con .main_menu {
-	position: relative;
+    position: relative;
     width: inherit;
     z-index: 200;
     top: 56%;
@@ -300,7 +313,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 }
 
 .menu_con .main_menu > ul > li {
-	display: inline-block;
+    display: inline-block;
     font-size: 1.125rem;
     line-height: 1;
     list-style-type: none;
@@ -335,14 +348,14 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 /* * ~~~~~~~~ Main Menu Dropdown's CSS- Desktop View ~~~~~~~~ * */
 
 .menu_con .main_menu > ul > li .nav-drop-down.residential-tab {
-	margin-left: -15rem;
-	width: 43rem;
+    margin-left: -15rem;
+    width: 43rem;
 }
 .residential-tab .service-singles {
     display: flex !important;
 }
 .menu_con .main_menu > ul > li .nav-drop-down.commercial-tab {
-	margin-left: -15rem;
+    margin-left: -15rem;
     width: 38rem;
 }
 
@@ -360,7 +373,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 }
 
 .menu_con .main_menu > ul > li .nav-drop-down ul.service-singles > li > a {
-	color: #2d397d;
+    color: #2d397d;
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.33333;
@@ -369,7 +382,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 }
 
 .menu_con .main_menu > ul > li .nav-drop-down {
-	color: #3c5aaf;
+    color: #3c5aaf;
     background-color: #fff;
     -webkit-box-shadow: 0 0 0.75rem rgba(0,0,0,.5);
     box-shadow: 0 10px 0.75rem rgba(0,0,0,.5);
@@ -387,7 +400,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 }
 
 .menu_con .main_menu > ul > li .nav-drop-down .emergency-phone {
-	color: #3c5aaf;
+    color: #3c5aaf;
     background-color: #ebeef7;
     border-radius: .5rem;
     display: block;
@@ -401,14 +414,14 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 }
 
 .menu_con .main_menu > ul > li .nav-drop-down .emergency-phone strong {
-	color: #2d397d;
+    color: #2d397d;
     font-size: 1.125rem;
     line-height: 1.33333;
     text-transform: uppercase;
 }
 
 .menu_con .main_menu > ul > li .nav-drop-down ul {
-	display: block;
+    display: block;
     float: left;
     margin: 1rem 0 0;
     padding-left: 0;
@@ -418,7 +431,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 }
 
 .menu_con .main_menu > ul > li .nav-drop-down ul > li {
-	color: #3c5aaf;
+    color: #3c5aaf;
     display: block;
     font-size: .9rem;
     line-height: 1.5;
@@ -428,7 +441,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 }
 
 .menu_con .main_menu > ul > li .nav-drop-down ul > li:first-child > a {
-	color: #2d397d;
+    color: #2d397d;
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.33333;
@@ -437,7 +450,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 }
 
 .menu_con .main_menu > ul > li.drop-down-tab > a > span::after  {
-	content: "\f078";
+    content: "\f078";
     font-size: 1rem;
     height: 1.8rem;
     font-family: FontAwesome;
@@ -462,7 +475,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 /* *~~~~~~~~~ Dropdown menu hover CSS - Desktop View ~~~~~~~~* */
 
 .menu_con .main_menu > ul > li.drop-down-tab.active > a > span:after {
-	visibility: hidden;
+    visibility: hidden;
 }
 
 .menu_con .main_menu > ul > li.drop-down-tab.active > a {
@@ -471,7 +484,7 @@ br + .custom-info_text, .custom-info_call .custom-info_text  {
 }
 
 .menu_con .main_menu > ul > li.drop-down-tab.active .nav-drop-down {
-	display: flex;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -517,7 +530,7 @@ body .sub-header-custom:after {
 
 body .sub-header-custom:after, 
 body .sub-header-custom:before {
-	background-color: #b1bddf;
+    background-color: #b1bddf;
     content: "";
     height: 4rem;
     left: 0;
@@ -539,7 +552,7 @@ body .sub-header-custom .zp_row #map-marker {
 }
 
 body .sub-header-custom .zp_row #header-location {
-	line-height: 4rem;
+    line-height: 4rem;
     display: inline-block;
     float: left;
     position: relative;
@@ -549,7 +562,7 @@ body .sub-header-custom .zp_row #header-location {
 }
 
 body .sub-header-custom .zp_row .desktop-header-phone {
-	color: #d52d37;
+    color: #d52d37;
     float: right;
     font-size: 1.375rem;
     height: 3rem;
@@ -560,7 +573,7 @@ body .sub-header-custom .zp_row .desktop-header-phone {
 }
 
 body .sub-header-custom .zp_row .desktop-header-phone > strong {
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 body .sub-header-custom .zp_row {
@@ -572,17 +585,17 @@ body .sub-header-custom .zp_row {
 /* * ~~~~~~~ DESKTOP MENU after scroll adjustments ~~~~~~~ * */
 
 body header.header-custom.sticky {
-	background-color: #003C84;
-	transition: 0.2s ease all;
+    background-color: #003C84;
+    transition: 0.2s ease all;
 }
 
 body header.header-custom.sticky .zp_row .menu_con .main_menu > ul > li > a {
-	border-bottom-color: #07346A;
-	color: #fff;
+    border-bottom-color: #07346A;
+    color: #fff;
 }
 
 body header.header-custom.sticky .zp_row .menu_con .main_menu > ul > li.active > a {
-	border-bottom-color: #fff;
+    border-bottom-color: #fff;
 }
 
 .menu_con .main_menu > ul > li.active {
@@ -596,12 +609,12 @@ body .sub-header-custom.sticky {
 }
 
 body .header-custom.sticky .zp_row {
-	height: 3rem;
+    height: 3rem;
 }
 
 body .header-custom.sticky .zp_row .menu_con {
-   	padding-left: 23%;
-   	height: 3rem;
+    padding-left: 23%;
+    height: 3rem;
 }
 
 body .header-custom.sticky .zp_row .menu_con .main_menu > ul > li > a {
@@ -618,9 +631,9 @@ body .header-custom.sticky .zp_row .zp_logo {
 }
 
 body .header-custom.sticky .zp_row .zp_logo .svg {
-	width: 100%;
-	height: auto;
-	top: 3px; 
+    width: 100%;
+    height: auto;
+    top: 3px; 
 }
 
 body .header-custom.sticky .zp_row .menu_con .main_menu > ul > li {
@@ -631,11 +644,11 @@ body .header-custom.sticky .zp_row .menu_con .main_menu > ul > li {
 body header.header-custom.sticky .zp_row .menu_con .main_menu, 
 body header.header-custom.sticky .zp_row .menu_con .top_sec,
 body header.header-custom.sticky:after {
-	top: -2rem;
+    top: -2rem;
 }
 
 body .header-custom.sticky .zp_row .main_menu > ul > li > a > span br {
-	display: none;
+    display: none;
 }
 
 body .header-custom.sticky .zp_row .menu_con .main_menu > ul > li .nav-drop-down {
@@ -644,7 +657,7 @@ body .header-custom.sticky .zp_row .menu_con .main_menu > ul > li .nav-drop-down
 
 span#call-now {
     /*background-color: #d52d37;*/
-	background-color: #07346A;
+    background-color: #07346A;
     border-radius: 4px;
     color: #fff;
     display: none;
@@ -654,7 +667,7 @@ span#call-now {
 }
 
 span#call-now .phone-icon {
-	bottom: -3px;
+    bottom: -3px;
     font-size: 26px;
     height: 15px;
     line-height: 15px;
@@ -664,7 +677,7 @@ span#call-now .phone-icon {
 }
 
 span#call-now span.local-page-phone {
-	color: #fff;
+    color: #fff;
     text-decoration: none;
     font-size: 19px;
     font-weight: 700;
@@ -678,81 +691,130 @@ span#call-now span.local-page-phone {
 /* * ~~~~~~~~~ Media Queries for different resolutions of Desktop ~~~~~~~~~ * */
 
 @media only screen and (min-width: 768px) {
-	header.sub-header-custom.splash {
-	    display: block;
-	}
-	header.sub-header-custom.sticky, #mobile-header, #mobile-navigation {
-	    display: none !important;
-	}
+    header.sub-header-custom.splash {
+        display: block;
+    }
+    header.sub-header-custom.sticky, #mobile-header, #mobile-navigation {
+        display: none !important;
+    }
 }
 
+@media (min-width: 992px) {
+
+    body header .zp_row .zp_logo {
+        height: 6rem;
+        left: 1.5rem;
+        width: 26rem;
+    }
+    body .header-custom.sticky .zp_row .zp_logo {
+        height: 3rem;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .custom-info ul li {
+        font-size: 13px;
+    }
+    .custom-info ul li i {
+        font-size: 23px;
+    }
+    .custom-info_text:first-of-type, .custom-info_drop, br {
+        display: none;
+    }
+    .custom-info ul {
+        margin-top: 8px;
+    }
+    body .zp_row {
+        height: 3rem;
+    }
+    .header-bottom .menu_con.container {
+        width: 100%;
+    }
+    #hero_img {
+        margin-top: 8px;
+    }
+    .menu_con .main_menu > ul > li .nav-drop-down ul > li {
+        font-size: 11px;
+    }
+    .menu_con .main_menu > ul > li .nav-drop-down ul > li:first-child > a {
+        font-size: 12px;
+    }
+    .menu_con .main_menu > ul > li .nav-drop-down.residential-tab {
+        margin-left: -12rem;
+    }
+
+}
+
+@media (max-width: 787px) {
+    .menu_con .main_menu > ul > li > a {
+        font-size: 12px;
+    }
+}
+
+
 @media (min-width: 1024px) {
-	body .header-custom.sticky .zp_row .menu_con {
-    	padding-left: 18%;
-	}
+    body .header-custom.sticky .zp_row .menu_con {
+        padding-left: 18%;
+    }
 }
 
 @media only screen and (min-width: 1128px) {
 
-	body header .zp_row .zp_logo {
-	    height: 6rem;
-	    left: 1.5rem;
-	    width: 26rem;
-	}
-	body header .zp_row .top_sec {
-	    margin-left: 0;
-	    width: auto;
-	    display: block;
-	}
-	body header .zp_row .menu_con {
-	    padding-left: 20.5rem;
-	}
-	body .header-custom.sticky .zp_row .menu_con .main_menu > ul > li > a {
-	    padding-left: .5rem;
-	    padding-right: .75rem;
-	}
-	body .header-custom.sticky .zp_row .menu_con .main_menu > ul {
-	    padding-left: 50px;
-	}
-	body .header-custom.sticky .zp_row .zp_logo {
-	    height: 3rem;
-	    left: 1.75rem;
-	    overflow: hidden;
-	    width: 15.5rem;
-	}
-	body header .zp_row .zp_logo .svg {
-		height: auto;
-		top: -9px;
-	}
+    body header .zp_row .top_sec {
+        margin-left: 0;
+        width: auto;
+        display: block;
+    }
+    body header .zp_row .menu_con {
+        padding-left: 20.5rem;
+    }
+    body .header-custom.sticky .zp_row .menu_con .main_menu > ul > li > a {
+        padding-left: .5rem;
+        padding-right: .75rem;
+    }
+    body .header-custom.sticky .zp_row .menu_con .main_menu > ul {
+        padding-left: 50px;
+    }
+    body .header-custom.sticky .zp_row .zp_logo {
+        height: 3rem;
+        left: 1.75rem;
+        overflow: hidden;
+        width: 15.5rem;
+    }
+    body header .zp_row .zp_logo .svg {
+        height: auto;
+        top: -9px;
+    }
 }
 
 @media (min-width: 1174px) {
-	body header .zp_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab {
-		margin-left: -26rem;
-    	width: 52rem;
-	}
-	body header .zp_row .menu_con .main_menu > ul > li .nav-drop-down.commercial-tab {
-		margin-left: -26rem;
-	    width: 52rem;
-	}
+    body header .zp_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab {
+        margin-left: -26rem;
+        width: 52rem;
+    }
+    body header .zp_row .menu_con .main_menu > ul > li .nav-drop-down.commercial-tab {
+        margin-left: -26rem;
+        width: 52rem;
+    }
 }
 
 @media (max-width: 921px) {
-	body header.header-custom.sticky .zp_row .menu_con .main_menu > ul > li.drop-down-tab > a > span:after {
-		bottom: -9px;
-	}
+    body header.header-custom.sticky .zp_row .menu_con .main_menu > ul > li.drop-down-tab > a > span:after {
+        bottom: -9px;
+    }
 }
 
 @media (max-width: 1174px) and (min-width: 768px) {
-	body .header-custom .zp_row .menu_con .main_menu > ul > li .nav-drop-down ul {
-    	width: 17rem;
-	}
-	body .header-custom .zp_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab > ul > li {
-	    display: none;
-	}
-	body .header-custom .zp_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab > ul > li:first-child {
-	    display: inline-block;
-	}
+    body .header-custom .zp_row .menu_con .main_menu > ul > li .nav-drop-down ul {
+        width: 17rem;
+    }
+    body .header-custom .zp_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab > ul > li {
+        display: none;
+    }
+    body .header-custom .zp_row .menu_con .main_menu > ul > li .nav-drop-down.residential-tab > ul > li:first-child {
+        display: inline-block;
+    }
 }
 
 
@@ -762,7 +824,7 @@ span#call-now span.local-page-phone {
 /* * ~~~~~~~~~~ Scroll Sections menu CSS ~~~~~~~~~~ * */
 
 aside {
-	float: left;
+    float: left;
     background-color: #ffdf00;
     border-bottom:solid 1px rgb(220,220,220);
     padding-top:10px;
@@ -771,25 +833,25 @@ aside {
 }
 
 aside ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	float: left;
-	width: 100%;
-	text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    width: 100%;
+    text-align: center;
 }
 
 aside ul li {
-	display: inline-block;
-	float: none;
+    display: inline-block;
+    float: none;
 }
 
 aside a {
-	color: #333;
-	transition: 0.1s ease all;
-	padding:3px 15px 10px 15px;
-	border-bottom: 3px solid #ffdf00;
-	display: block;  
+    color: #333;
+    transition: 0.1s ease all;
+    padding:3px 15px 10px 15px;
+    border-bottom: 3px solid #ffdf00;
+    display: block;  
 }
 
 aside.sticky {
@@ -808,77 +870,82 @@ aside a.nav-active {
 }
 
 aside a:hover, aside a:active, aside a:focus {
-	color: #2e449f;
-	text-decoration: none;
+    color: #2e449f;
+    text-decoration: none;
 } 
 
 
 @media (max-width: 768px) {
-	aside a {
-		padding: 11px 8px;
-	}
-	aside > ul > li {
-		float: left;
-	}
-	aside > ul > li:first-child {
-		margin-left:15px;
-	}
-	aside > ul.sticky > li:last-child {
-		float: right;
-		background-color: #d52d37;
-	    display: block;
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-	    width: 85px;
-	}
-	aside > ul.sticky > li:last-child > a {
-		padding: 0;
-	    color: #fff;
-	    font-size: 12px;
-	    padding-top: 10px;
-	    border: 0;
-	}
-	aside > ul.sticky > li:last-child i {
-		display: block;
-	    color: #fff;
-	    font-size: 28px;
-	    top: .1em;
-	    left: .5em;
-	}
+    aside a {
+        padding: 11px 8px;
+    }
+    aside > ul > li {
+        float: left;
+    }
+    aside > ul > li:first-child {
+        margin-left:15px;
+    }
+    aside > ul.sticky > li:last-child {
+        float: right;
+        background-color: #d52d37;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 85px;
+    }
+    aside > ul.sticky > li:last-child > a {
+        padding: 0;
+        color: #fff;
+        font-size: 12px;
+        padding-top: 10px;
+        border: 0;
+    }
+    aside > ul.sticky > li:last-child i {
+        display: block;
+        color: #fff;
+        font-size: 28px;
+        top: .1em;
+        left: .5em;
+    }
 }
 
 @media (max-width: 450px) {
-	aside > ul > li:nth-child(4),
-	aside > ul > li:nth-child(5) {
-		display: none;
-	}
+    aside > ul > li:nth-child(4),
+    aside > ul > li:nth-child(5) {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
-	html {
-	    font-size: 16px!important;
-	}
+    html {
+        font-size: 16px!important;
+    }
 }
 
+/*===== Browser-specific overrides */
 
+@media (min-width: 992px) {
+    @supports (-ms-ime-align:auto) {
+        body .header-custom.sticky .zp_row .zp_logo {
+            height: 3em;
+        }
+    }
 
-
-/* * ~~~~~~~~~~ Few extra elements used in this demo ~~~~~~~~~ * */
-
-#hero_img {
-	height: 300px;
-	background: url('../images/plumbing-services2.png') no-repeat center center;
-	margin-top: 50px;
 }
+@media all and (-ms-high-contrast:none) {
+     *::-ms-backdrop, aside.sticky { top: 30px } /* IE11 */
+     body .header-custom.sticky .zp_row .zp_logo {
+            height: 3em;
+        }
+     }
 
-footer {
-	background: #999;
-	min-height: 260px;
-	margin-top: 50px;
-}	
-
-
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+/* Safari only override */
+::i-block-chrome,.header-social-section {
+    float: none;
+}
+}
 
 
 
@@ -889,9 +956,9 @@ footer {
 ********************************************************************************************************/
 
 @media (max-width: 767px) {
-	body .header-custom, body .sub-header-custom {
-		display: none !important;
-	}
+    body .header-custom, body .sub-header-custom {
+        display: none !important;
+    }
     aside.sticky {
         margin-top: 54px;
         transition: .2s all ease;
@@ -967,7 +1034,7 @@ footer {
 }
 
 #mobile-header .zippy-navigation-container#mobile-menu-sub-header #breakout-nav {
-	background-color: #506bb7;
+    background-color: #506bb7;
     display: block;
     overflow: hidden;
     height: 5.25rem;
@@ -980,14 +1047,14 @@ footer {
 }
 
 #mobile-header .zippy-navigation-container#mobile-menu-sub-header #breakout-nav #mob-location.local-page {
-	width: calc(100% - 85px);
+    width: calc(100% - 85px);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: inline-block;
 }
 
 #mobile-header .zippy-navigation-container#mobile-menu-sub-header #breakout-nav #mob-location {
-	color: #fff;
+    color: #fff;
     float: left;
     font-size: 1.5rem;
     height: 5.25rem;
@@ -1064,16 +1131,16 @@ footer {
 html.open,html.open body{overflow:hidden;}
 
 @media only screen and (min-width: 360px) {
-	#mobile-navigation #mobile-menu-nav-container {
-	    width: 87%;
-	}
+    #mobile-navigation #mobile-menu-nav-container {
+        width: 87%;
+    }
 }
 @media only screen and (min-width: 375px) {
-	#mobile-navigation #mobile-menu-nav-container {
-	    width: 84.12%;
-	}
-}	
-	
+    #mobile-navigation #mobile-menu-nav-container {
+        width: 84.12%;
+    }
+}   
+    
 
 #mobile-navigation #mobile-menu-nav-container nav {
     width: 200%;
@@ -1082,7 +1149,7 @@ html.open,html.open body{overflow:hidden;}
 }
 
 #mobile-navigation #mobile-menu-nav-container nav.mobile-menu-main-nav {
-	width: 200%;
+    width: 200%;
 }
 
 #mobile-navigation #mobile-menu-nav-container ol, 
@@ -1106,7 +1173,7 @@ html.open,html.open body{overflow:hidden;}
 }
 
 #mobile-navigation #mobile-menu-nav-container li.current {
-	background-color: #003c84;
+    background-color: #003c84;
 }
 
 #mobile-navigation #mobile-menu-nav-container li.current a {
@@ -1220,11 +1287,11 @@ html.open,html.open body{overflow:hidden;}
 /** Submenu Open **/
 
 #mobile-navigation #mobile-menu-nav-container.subnav-open a#close-side-nav {
-	left:-100%;
+    left:-100%;
 }
 
 #mobile-navigation #mobile-menu-nav-container.subnav-open ul#mobile-menu-main-nav {
-	margin-left: -50%;
+    margin-left: -50%;
 }
 
 
@@ -1233,12 +1300,12 @@ html.open,html.open body{overflow:hidden;}
 /** After scrolling 100px in mobile devices **/
 
 #mobile-header.sticky .zippy-navigation-container#mobile-menu-header {
-	background-color: #013B80;
+    background-color: #013B80;
 }
 
 #mobile-header.sticky .zippy-navigation-container#mobile-menu-header #open-side-nav,
 #mobile-header.sticky .zippy-navigation-container#mobile-menu-header #site-search {
-	color: #fff;
+    color: #fff;
 }
 
 #mobile-header #mobile-menu-sub-header.zippy-navigation-container {
@@ -1249,16 +1316,16 @@ html.open,html.open body{overflow:hidden;}
 }
 
 #mobile-header.sticky #mobile-menu-sub-header.zippy-navigation-container {
-	margin-top:-5.25rem;
-	width: 100%;
-	position: absolute;
+    margin-top:-5.25rem;
+    width: 100%;
+    position: absolute;
 }
 
 
 #mobile-header.sticky #mobile-menu-sub-header.zippy-navigation-container>#nav-phone-number:before { 
-	left:0; 
+    left:0; 
 }
 
 #mobile-header.sticky #mobile-menu-sub-header.zippy-navigation-container>#nav-phone-number:after { 
-	right:0; 
+    right:0; 
 }
