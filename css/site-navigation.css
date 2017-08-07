@@ -745,7 +745,11 @@ span#call-now span.local-page-phone {
     }
 
 }
-
+@media (max-width: 767px) {
+    body {
+        padding-top: 109px;
+    }
+}
 @media (max-width: 787px) {
     .menu_con .main_menu > ul > li > a {
         font-size: 12px;
@@ -872,6 +876,10 @@ aside a.nav-active {
 aside a:hover, aside a:active, aside a:focus {
     color: #2e449f;
     text-decoration: none;
+}
+
+aside > ul.splash > li:last-child {
+        display: none;
 } 
 
 
@@ -887,18 +895,19 @@ aside a:hover, aside a:active, aside a:focus {
     }
     aside > ul.sticky > li:last-child {
         float: right;
-        background-color: #d52d37;
+        background-color: #0070c2;
         display: block;
         position: absolute;
         top: 0;
         right: 0;
         width: 85px;
+        height: 102%;
+        padding-top: 7px;
     }
     aside > ul.sticky > li:last-child > a {
         padding: 0;
         color: #fff;
         font-size: 12px;
-        padding-top: 10px;
         border: 0;
     }
     aside > ul.sticky > li:last-child i {
@@ -993,7 +1002,7 @@ aside a:hover, aside a:active, aside a:focus {
 }
 
 #mobile-header .zippy-navigation-container#mobile-menu-header #open-side-nav {
-    float: left;
+    float: right;
     height: 100%;
     width: 44px;
     font-size: 30px;
@@ -1009,11 +1018,10 @@ aside a:hover, aside a:active, aside a:focus {
     margin: auto;
     max-width: 22.1666667rem;
     position: absolute;
-    right: 0;
+    right: 50px;
     top: 0;
     width: 71.25%;
     z-index: 1;
-    padding-top: 7px;
     text-align: center;
 }
 
@@ -1035,7 +1043,7 @@ aside a:hover, aside a:active, aside a:focus {
 
 #mobile-header .zippy-navigation-container#mobile-menu-sub-header #breakout-nav {
     background-color: #506bb7;
-    display: block;
+    display: flex;
     overflow: hidden;
     height: 5.25rem;
     margin-top: 0;
@@ -1108,14 +1116,13 @@ aside a:hover, aside a:active, aside a:focus {
 #mobile-navigation {
     background-color: hsla(0,0%,93%,0);
     height: 100%;
-    left: 0;
-    margin-left: -100%;
+    right: 0;
+    margin-right: -100%;
     overflow: auto;
     position: fixed;
     top: 0;
-    -webkit-transition: margin-left .5s,background-color .5s ease .25s;
-    -icab-transition: margin-left .5s,background-color .5s ease .25s;
-    transition: margin-left .5s,background-color .5s ease .25s;
+    -webkit-transition: margin-right .5s,background-color .5s ease .25s;
+    transition: margin-right .5s,background-color .5s ease .25s;
     width: 100%;
     z-index: 1500;
 }
@@ -1126,7 +1133,21 @@ aside a:hover, aside a:active, aside a:focus {
     position: relative;
     width: 97%;
     overflow: hidden;
+    float: right;
 }
+
+.zp-breakout-nav a, .zp-breakout-nav a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #003c84;
+    box-shadow: 1px 1px 1px #888 inset;
+    margin: auto;
+    padding: 5px 15px;
+    font-size: 21px;
+}
+
+.zp-breakout-nav 
+
 
 html.open,html.open body{overflow:hidden;}
 
@@ -1279,7 +1300,7 @@ html.open,html.open body{overflow:hidden;}
 
 #mobile-navigation.open {
     background-color: hsla(0,0%,93%,.7);
-    margin-left: 0;
+    margin-right: 0;
 }
 
 
