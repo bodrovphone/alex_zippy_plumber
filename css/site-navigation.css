@@ -137,7 +137,7 @@ body header, body header * {
 }
 
 main .container section {
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 main .container section h1 {
@@ -850,6 +850,10 @@ aside ul li {
     float: none;
 }
 
+aside > ul.sticky > li:last-child {
+    display: none;
+}
+
 aside a {
     color: #333;
     transition: 0.1s ease all;
@@ -901,7 +905,7 @@ aside > ul.splash > li:last-child {
         top: 0;
         right: 0;
         width: 85px;
-        height: 102%;
+        height: 57px;
         padding-top: 7px;
     }
     aside > ul.sticky > li:last-child > a {
@@ -916,6 +920,14 @@ aside > ul.splash > li:last-child {
         font-size: 28px;
         top: .1em;
         left: .5em;
+    }
+
+}
+
+
+@media (max-width: 630px) {
+    #site-search {
+        width: 14%;
     }
 }
 
@@ -1139,11 +1151,15 @@ aside > ul.splash > li:last-child {
 .zp-breakout-nav a, .zp-breakout-nav a:hover {
     color: #fff;
     text-decoration: none;
-    background-color: #003c84;
-    box-shadow: 1px 1px 1px #888 inset;
     margin: auto;
     padding: 5px 15px;
     font-size: 21px;
+    text-align: center;
+    width: 9%;
+}
+
+.zp-breakout-nav a.header-telephone {
+    width: 91%;
 }
 
 .zp-breakout-nav 

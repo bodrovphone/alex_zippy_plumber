@@ -1,10 +1,10 @@
 $.scrollTo = $.fn.scrollTo = function(x, y, options){
-    if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
-
+    if (!(this instanceof $)) { return $.fn.scrollTo.apply($('html, body'), arguments); }
+    const w = window.innerWidth > 766 ? -50 : -10 ; // sticky menu fix (mobile & desktop delta)
     options = $.extend({}, {
         gap: {
             x: 0,
-            y: 0
+            y: w
         },
         animation: {
             easing: 'easeInOutQuart', // scroll animation type, you can play with it, picking up the options from 'easing.js'
@@ -18,15 +18,12 @@ $.scrollTo = $.fn.scrollTo = function(x, y, options){
         var elem = $(this);
         elem.stop().animate({
             scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
-            scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top + options.gap.y - 80
+            scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top + options.gap.y - 110
         }, options.animation);
     });
 };
 
-
-
 /* * ~~~~~~~~~~~ Mobile Navigation starts ~~~~~~~~~~ * */
-
 
 'use strict';
 
@@ -115,7 +112,7 @@ $(document).ready(function(){
     /* *~~~~~~~~~ After scroll - menu functions ~~~~~~~~~* */
     
     $(window).scroll(function(){
-        var window_top = $(window).scrollTop() + 120; 
+        var window_top = $(window).scrollTop() + 140;
         var div_top = $('#nav-anchor').offset().top;
             if (window_top > div_top) {
                 $('aside, #mobile-header').addClass('sticky');
@@ -157,7 +154,7 @@ $(document).ready(function(){
             var theID = aArray[i];
             var nav = $(theID);
             if(nav.length) {
-                var divPos = nav.offset().top - 80;
+                var divPos = nav.offset().top - 140; //here we control underline appearance on sticky items
                 var divHeight = nav.height();
                 if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
                     $("a[href='" + theID + "']").addClass("nav-active");
