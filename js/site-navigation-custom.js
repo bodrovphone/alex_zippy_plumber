@@ -113,7 +113,7 @@ $(document).ready(function(){
     
     $(window).scroll(function(){
         var window_top = $(window).scrollTop() + 140;
-        var div_top = $('#nav-anchor').offset().top;
+        var div_top = $('#nav-anchor').length ? $('#nav-anchor').offset().top : 10;
             if (window_top > div_top) {
                 $('aside, #mobile-header').addClass('sticky');
             } else {
@@ -127,8 +127,9 @@ $(document).ready(function(){
         else {
             $('header.header-custom, header.sub-header-custom, #mobile-header, aside > ul').removeClass('sticky').addClass('splash');
             $('#call-now').css({'display':'none'});
-        }    
+        }
     });
+
 
     $("aside a").click(function(evn){
         evn.preventDefault();
