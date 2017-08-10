@@ -747,7 +747,7 @@ span#call-now span.local-page-phone {
 }
 @media (max-width: 767px) {
     body {
-        padding-top: 109px;
+        padding-top: 88px;
     }
 }
 @media (max-width: 787px) {
@@ -981,7 +981,7 @@ aside > ul.splash > li:last-child {
         display: none !important;
     }
     aside.sticky {
-        margin-top: 54px;
+        margin-top: 96px;
         transition: .2s all ease;
     }
     main .container section {
@@ -1057,7 +1057,7 @@ aside > ul.splash > li:last-child {
     background-color: #506bb7;
     display: flex;
     overflow: hidden;
-    height: 5.25rem;
+    height: 42px;
     margin-top: 0;
     -webkit-transition: margin-top .5s;
     -icab-transition: margin-top .5s;
@@ -1350,12 +1350,6 @@ html.open,html.open body{overflow:hidden;}
     -icab-transition: margin-top .5s;
     transition: margin-top .5s;
     width: 100%;
-}
-
-#mobile-header.sticky #mobile-menu-sub-header.zippy-navigation-container {
-    margin-top:-5.25rem;
-    width: 100%;
-    position: absolute;
 }
 
 
