@@ -893,8 +893,9 @@ aside > ul.splash > li:last-child {
     aside a {
         padding: 11px 8px;
     }
-    aside > ul > li {
+    aside.sticky > ul > li {
         float: left;
+        transition: float 2s;
     }
     aside > ul > li:first-child {
         margin-left:15px;
