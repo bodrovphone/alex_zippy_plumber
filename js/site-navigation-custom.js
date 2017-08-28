@@ -112,7 +112,7 @@ $(document).ready(function(){
     /* *~~~~~~~~~ After scroll - menu functions ~~~~~~~~~* */
     
     $(window).scroll(function(){
-        if (!$('#sidebar').length) return ; 
+        if (!$('#sidebar').length && window.innerWidth < 768) return ; 
         var window_top = $(window).scrollTop() + 140;
         var div_top = $('#nav-anchor').length ? $('#nav-anchor').offset().top : 10;
             if (window_top > div_top) {
